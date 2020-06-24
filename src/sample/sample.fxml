@@ -1,0 +1,26 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<BorderPane fx:controller="sample.Controller" xmlns:fx="http://javafx.com/fxml">
+    <top>
+        <TextArea fx:id="taConversation" BorderPane.alignment="BASELINE_CENTER"/>
+    </top>
+    <left>
+
+    </left>
+    <center>
+        <TextField fx:id="tfMessageToSend" BorderPane.alignment="CENTER" promptText="Enter the message"/>
+    </center>
+    <right>
+
+    </right>
+    <bottom>
+        <Button fx:id="btnSend" BorderPane.alignment="BOTTOM_CENTER" text="Send"/>
+    </bottom>
+</BorderPane>
