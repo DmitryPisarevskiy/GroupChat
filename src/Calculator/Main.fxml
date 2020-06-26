@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import java.net.URL?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="Calculator.Controller"
+      prefHeight="400.0" prefWidth="600.0">
+    <stylesheets>
+        <URL value="@/Calculator/css/style.css"/>
+    </stylesheets>
+    <HBox>
+        <TextField fx:id="tfEnter" editable="false" prefWidth="600"/>
+        <Label text="=" minWidth="20" alignment="CENTER"/>
+        <TextField fx:id="tfAnswer" editable="false" minWidth="120"/>
+    </HBox>
+    <GridPane >
+        <Button fx:id="btn1" text="1" GridPane.rowIndex="0" GridPane.columnIndex="0" onAction="#btnNumberClick" prefWidth="300" prefHeight="300"/>
+        <Button fx:id="btn2" text="2" GridPane.rowIndex="0" GridPane.columnIndex="1" onAction="#btnNumberClick" prefWidth="300" prefHeight="300"/>
+        <Button fx:id="btn3" text="3" GridPane.rowIndex="0" GridPane.columnIndex="2" onAction="#btnNumberClick" prefWidth="300" prefHeight="300"/>
+        <Button fx:id="btnMultiply" text="*" GridPane.rowIndex="0" GridPane.columnIndex="3" onAction="#btnNumberClick" prefWidth="300" prefHeight="300"/>
+        <Button fx:id="btn4" text="4" GridPane.rowIndex="1" GridPane.columnIndex="0" onAction="#btnNumberClick" prefWidth="300" prefHeight="300"/>
+        <Button fx:id="btn5" text="5" GridPane.rowIndex="1" GridPane.columnIndex="1" onAction="#btnNumberClick" prefWidth="300" prefHeight="300"/>
+        <Button fx:id="btn6" text="6" GridPane.rowIndex="1" GridPane.columnIndex="2" onAction="#btnNumberClick" prefWidth="300" prefHeight="300"/>
+        <Button fx:id="btnDivide" text="/" GridPane.rowIndex="1" GridPane.columnIndex="3" onAction="#btnNumberClick" prefWidth="300" prefHeight="300"/>
+        <Button fx:id="btn7" text="7" GridPane.rowIndex="2" GridPane.columnIndex="0" onAction="#btnNumberClick" prefWidth="300" prefHeight="300"/>
+        <Button fx:id="btn8" text="8" GridPane.rowIndex="2" GridPane.columnIndex="1" onAction="#btnNumberClick" prefWidth="300" prefHeight="300"/>
+        <Button fx:id="btn9" text="9" GridPane.rowIndex="2" GridPane.columnIndex="2" onAction="#btnNumberClick" prefWidth="300" prefHeight="300"/>
+        <Button fx:id="btnPlus" text="+" GridPane.rowIndex="2" GridPane.columnIndex="3" onAction="#btnNumberClick" prefWidth="300" prefHeight="300"/>
+        <Button fx:id="btn0" text="0" GridPane.rowIndex="3" GridPane.columnIndex="1" onAction="#btnNumberClick" prefWidth="300" prefHeight="300"/>
+        <Button fx:id="btnClear" text="Clear" GridPane.rowIndex="4" GridPane.columnIndex="0" onAction="#btnClearClick" prefWidth="300" prefHeight="300"/>
+        <Button fx:id="btnDot" text="." GridPane.rowIndex="4" GridPane.columnIndex="1" onAction="#btnNumberClick" prefWidth="300" prefHeight="300"/>
+        <Button fx:id="btnMinus" text="-" GridPane.rowIndex="3" GridPane.columnIndex="3" onAction="#btnNumberClick" prefWidth="300" prefHeight="300"/>
+        <Button fx:id="btnLeftBracket" text="(" GridPane.rowIndex="3" GridPane.columnIndex="0" onAction="#btnNumberClick" prefWidth="300" prefHeight="300"/>
+        <Button fx:id="btnRightBracket" text=")" GridPane.rowIndex="3" GridPane.columnIndex="2" onAction="#btnNumberClick" prefWidth="300" prefHeight="300"/>
+        <Button fx:id="btnDelete" text="Del" GridPane.rowIndex="4" GridPane.columnIndex="2" onAction="#btnDelete" prefWidth="300" prefHeight="300"/>
+        <Button fx:id="btnEquals" text="=" GridPane.rowIndex="4" GridPane.columnIndex="3" onAction="#btnEqualsClick" prefWidth="300" prefHeight="300"/>
+    </GridPane>
+</VBox>
+

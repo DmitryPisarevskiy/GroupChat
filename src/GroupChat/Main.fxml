@@ -1,0 +1,48 @@
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import java.net.URL?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<BorderPane fx:controller="GroupChat.Controller" xmlns:fx="http://javafx.com/fxml"
+            prefHeight="200" prefWidth="320">
+    <stylesheets>
+        <URL value="@/GroupChat/css/style.css"/>
+    </stylesheets>
+
+    <top>
+        <MenuBar opacity="0.9">
+            <Menu text="File">
+                <MenuItem text="Exit" onAction="#close"/>
+            </Menu>
+            <Menu text="Help">
+                <MenuItem text="About" onAction="#openAbout"/>
+            </Menu>
+        </MenuBar>
+    </top>
+
+    <left>
+    </left>
+
+    <center>
+        <TextArea fx:id="lConversation" BorderPane.alignment="CENTER" editable="false"/>
+    </center>
+
+    <right>
+    </right>
+
+    <bottom>
+        <HBox alignment="CENTER">
+            <TextField fx:id="tfMessage" onAction="#sendMessage" promptText="enter the message"
+                       BorderPane.alignment="CENTER" prefWidth="400"/>
+            <Button text="Send" onAction="#sendMessage" fx:id="btnSend" BorderPane.alignment="CENTER"
+                    prefWidth="100" minWidth="70"/>
+        </HBox>
+    </bottom>
+
+</BorderPane>
